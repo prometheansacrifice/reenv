@@ -1,5 +1,5 @@
 {
-  "checksum": "b810f3bfb31952a35269858bc21827a1",
+  "checksum": "91d25761b914a2cd3989f09e5e1dbd93",
   "root": "reenv@link-dev:./package.json",
   "node": {
     "refmterr@3.1.10@d41d8cd9": {
@@ -31,9 +31,8 @@
       "overrides": [],
       "dependencies": [
         "refmterr@3.1.10@d41d8cd9", "pesy@0.4.1@d41d8cd9",
-        "ocaml@4.6.10@d41d8cd9",
-        "@reason-native/rely@github:facebookexperimental/reason-native:rely.json#fce5e5c@d41d8cd9",
-        "@reason-native/pastel@0.2.0@d41d8cd9",
+        "ocaml@4.6.10@d41d8cd9", "@reason-native/rely@1.2.0@d41d8cd9",
+        "@reason-native/pastel@github:facebookexperimental/reason-native:pastel.json#439d027@d41d8cd9",
         "@opam/dune@opam:1.7.3@72aad784", "@esy-ocaml/reason@3.4.0@d41d8cd9"
       ],
       "devDependencies": [
@@ -69,35 +68,35 @@
       "dependencies": [],
       "devDependencies": []
     },
-    "@reason-native/rely@github:facebookexperimental/reason-native:rely.json#fce5e5c@d41d8cd9": {
-      "id":
-        "@reason-native/rely@github:facebookexperimental/reason-native:rely.json#fce5e5c@d41d8cd9",
+    "@reason-native/rely@1.2.0@d41d8cd9": {
+      "id": "@reason-native/rely@1.2.0@d41d8cd9",
       "name": "@reason-native/rely",
-      "version":
-        "github:facebookexperimental/reason-native:rely.json#fce5e5c",
+      "version": "1.2.0",
       "source": {
         "type": "install",
         "source": [
-          "github:facebookexperimental/reason-native:rely.json#fce5e5c"
+          "archive:https://registry.npmjs.org/@reason-native/rely/-/rely-1.2.0.tgz#sha1:8be65108fd1e6cd2fc5ebc1acf4cb3fdb24b097e"
         ]
       },
       "overrides": [],
       "dependencies": [
         "refmterr@3.1.10@d41d8cd9", "ocaml@4.6.10@d41d8cd9",
-        "@reason-native/pastel@0.2.0@d41d8cd9",
+        "@reason-native/pastel@github:facebookexperimental/reason-native:pastel.json#439d027@d41d8cd9",
         "@reason-native/file-context-printer@0.0.3@d41d8cd9",
         "@opam/dune@opam:1.7.3@72aad784", "@esy-ocaml/reason@3.4.0@d41d8cd9"
       ],
       "devDependencies": []
     },
-    "@reason-native/pastel@0.2.0@d41d8cd9": {
-      "id": "@reason-native/pastel@0.2.0@d41d8cd9",
+    "@reason-native/pastel@github:facebookexperimental/reason-native:pastel.json#439d027@d41d8cd9": {
+      "id":
+        "@reason-native/pastel@github:facebookexperimental/reason-native:pastel.json#439d027@d41d8cd9",
       "name": "@reason-native/pastel",
-      "version": "0.2.0",
+      "version":
+        "github:facebookexperimental/reason-native:pastel.json#439d027",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://registry.npmjs.org/@reason-native/pastel/-/pastel-0.2.0.tgz#sha1:90d6afacf90db0350705c08d151043ca96dcea10"
+          "github:facebookexperimental/reason-native:pastel.json#439d027"
         ]
       },
       "overrides": [],
@@ -105,7 +104,7 @@
         "ocaml@4.6.10@d41d8cd9", "@opam/dune@opam:1.7.3@72aad784",
         "@esy-ocaml/reason@3.4.0@d41d8cd9"
       ],
-      "devDependencies": []
+      "devDependencies": [ "ocaml@4.6.10@d41d8cd9" ]
     },
     "@reason-native/file-context-printer@0.0.3@d41d8cd9": {
       "id": "@reason-native/file-context-printer@0.0.3@d41d8cd9",
@@ -119,7 +118,8 @@
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.6.10@d41d8cd9", "@reason-native/pastel@0.2.0@d41d8cd9",
+        "ocaml@4.6.10@d41d8cd9",
+        "@reason-native/pastel@github:facebookexperimental/reason-native:pastel.json#439d027@d41d8cd9",
         "@opam/re@opam:1.8.0@7baac1a7", "@opam/dune@opam:1.7.3@72aad784",
         "@esy-ocaml/reason@3.4.0@d41d8cd9"
       ],
