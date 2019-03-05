@@ -11,7 +11,7 @@ let rec readUntilEndOfFile = (~previousLines=[], in_channel) =>
       readUntilEndOfFile(~previousLines=lines, in_channel);
     }
   ) {
-  | End_of_file => previousLines
+  | End_of_file => List.rev(previousLines)
   };
 
 let trimCitation = str => {
@@ -21,7 +21,7 @@ let trimCitation = str => {
   } else if (str.[0] == '"') {
     // If we find a " in the start, assume it's one in the end as well
     let len = String.length(str);
-    String.sub(str, 1, len - 2);
+    String.sub(str, 1, len - 3);
   } else {
     str;
   };
