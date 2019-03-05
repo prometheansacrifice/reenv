@@ -1,5 +1,5 @@
 {
-  "checksum": "555b863b4b7dee745469f5a3d7b5319c",
+  "checksum": "b810f3bfb31952a35269858bc21827a1",
   "root": "reenv@link-dev:./package.json",
   "node": {
     "refmterr@3.1.10@d41d8cd9": {
@@ -31,7 +31,8 @@
       "overrides": [],
       "dependencies": [
         "refmterr@3.1.10@d41d8cd9", "pesy@0.4.1@d41d8cd9",
-        "ocaml@4.6.10@d41d8cd9", "@reason-native/rely@1.2.0@d41d8cd9",
+        "ocaml@4.6.10@d41d8cd9",
+        "@reason-native/rely@github:facebookexperimental/reason-native:rely.json#fce5e5c@d41d8cd9",
         "@reason-native/pastel@0.2.0@d41d8cd9",
         "@opam/dune@opam:1.7.3@72aad784", "@esy-ocaml/reason@3.4.0@d41d8cd9"
       ],
@@ -68,21 +69,23 @@
       "dependencies": [],
       "devDependencies": []
     },
-    "@reason-native/rely@1.2.0@d41d8cd9": {
-      "id": "@reason-native/rely@1.2.0@d41d8cd9",
+    "@reason-native/rely@github:facebookexperimental/reason-native:rely.json#fce5e5c@d41d8cd9": {
+      "id":
+        "@reason-native/rely@github:facebookexperimental/reason-native:rely.json#fce5e5c@d41d8cd9",
       "name": "@reason-native/rely",
-      "version": "1.2.0",
+      "version":
+        "github:facebookexperimental/reason-native:rely.json#fce5e5c",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://registry.npmjs.org/@reason-native/rely/-/rely-1.2.0.tgz#sha1:8be65108fd1e6cd2fc5ebc1acf4cb3fdb24b097e"
+          "github:facebookexperimental/reason-native:rely.json#fce5e5c"
         ]
       },
       "overrides": [],
       "dependencies": [
         "refmterr@3.1.10@d41d8cd9", "ocaml@4.6.10@d41d8cd9",
         "@reason-native/pastel@0.2.0@d41d8cd9",
-        "@reason-native/file-context-printer@0.0.2@d41d8cd9",
+        "@reason-native/file-context-printer@0.0.3@d41d8cd9",
         "@opam/dune@opam:1.7.3@72aad784", "@esy-ocaml/reason@3.4.0@d41d8cd9"
       ],
       "devDependencies": []
@@ -104,14 +107,14 @@
       ],
       "devDependencies": []
     },
-    "@reason-native/file-context-printer@0.0.2@d41d8cd9": {
-      "id": "@reason-native/file-context-printer@0.0.2@d41d8cd9",
+    "@reason-native/file-context-printer@0.0.3@d41d8cd9": {
+      "id": "@reason-native/file-context-printer@0.0.3@d41d8cd9",
       "name": "@reason-native/file-context-printer",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://registry.npmjs.org/@reason-native/file-context-printer/-/file-context-printer-0.0.2.tgz#sha1:effbcb6db360cca9ac293a0075bc0d5912bd0ce0"
+          "archive:https://registry.npmjs.org/@reason-native/file-context-printer/-/file-context-printer-0.0.3.tgz#sha1:b92eec7b10107ccb27528f9eea9bb51252bca491"
         ]
       },
       "overrides": [],
