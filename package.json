@@ -55,6 +55,6 @@
     "@opam/odoc": "*"
   },
   "resolutions": {
-    "@reason-native/rely": "facebookexperimental/reason-native:rely.json#fce5e5c"
+    "@reason-native/rely": "facebookexperimental/reason-native:rely.json#028b097"
   }
 }
