@@ -21,7 +21,7 @@ let trimCitation = str => {
   } else if (str.[0] == '"') {
     // If we find a " in the start, assume it's one in the end as well
     let len = String.length(str);
-    let until = Sys.win32 ? len - 3 : len - 1;
+    let until = Sys.win32 ? len - 3 : len - 2;
 
     String.sub(str, 1, until);
   } else {
