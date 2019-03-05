@@ -1,6 +1,6 @@
 open TestFramework;
 
-describe("readUntilEndOfFile", utils =>
+describeSkip("readUntilEndOfFile", utils =>
   utils.test("should read all lines corectly", ({expect}) => {
     let file = open_in_bin("./test/.env");
     let rows = Reenv.Util.readUntilEndOfFile(file);
