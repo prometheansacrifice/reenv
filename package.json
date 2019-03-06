@@ -53,8 +53,5 @@
     "@opam/merlin": "*",
     "ocaml": "~4.6.0",
     "@opam/odoc": "*"
-  },
-  "resolutions": {
-    "@reason-native/pastel": "facebookexperimental/reason-native:pastel.json#439d027"
   }
 }

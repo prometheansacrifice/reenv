@@ -3,10 +3,10 @@ let rec readUntilEndOfFile = (~previousLines=[], in_channel) =>
     {
       let row = input_line(in_channel);
       let lines =
-        switch (row) {
+        switch (String.trim(row)) {
         | "" => previousLines
         | r when String.unsafe_get(r, 0) == '#' => previousLines
-        | _ => [row, ...previousLines]
+        | r => [r, ...previousLines]
         };
       readUntilEndOfFile(~previousLines=lines, in_channel);
     }
@@ -21,9 +21,8 @@ let trimCitation = str => {
   } else if (str.[0] == '"') {
     // If we find a " in the start, assume it's one in the end as well
     let len = String.length(str);
-    let until = Sys.win32 ? len - 3 : len - 2;
 
-    String.sub(str, 1, until);
+    String.sub(str, 1, len - 2);
   } else {
     str;
   };
