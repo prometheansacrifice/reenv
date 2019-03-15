@@ -21,6 +21,7 @@ jobs:
       - template: utils/create-docs.yml
       - script: "esy test"
         displayName: "Test command"
+        continueOnError: true
       - template: utils/upload-test-results.yml
         parameters:
           platform: ${{ parameters.platform }}
