@@ -28,10 +28,6 @@ let trimCitation = str => {
   };
 };
 
-let replaceNewline = str => {
-  Str.global_replace(Str.regexp("\\\\n"), "\n", str);
-};
-
 let escapeEquals = line =>
   switch (line) {
   | [name, ...value] =>
@@ -39,8 +35,9 @@ let escapeEquals = line =>
       value
       |> String.concat("=")
       |> trimCitation
-      |> replaceNewline
+      |> Str.global_replace(Str.regexp("\\\\n"), "\n")
       |> String.trim;
+
     (name, fixedValue);
   | [] => ("", "") // This should never happen
   };
