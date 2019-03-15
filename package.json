@@ -53,7 +53,7 @@
     "@opam/cmdliner": "*"
   },
   "resolutions": {
-    "@reason-native/rely": "ulrikstrid/reason-native:rely.json#969b7a7"
+    "@reason-native/rely": "ulrikstrid/reason-native:rely.json#8f58a3d"
   },
   "devDependencies": {
     "@opam/bisect_ppx": "*",
