@@ -38,7 +38,7 @@ let checkSafe = (~safeFile, t) => {
   |> (
     keys =>
       switch (keys) {
-      | [] => ()
+      | [] => raise(Missing_keys("a, b, c"))
       | lst => Missing_keys(String.concat(", ", lst)) |> raise
       }
   );

@@ -14,19 +14,8 @@ let rec readUntilEndOfFile = (~previousLines=[], in_channel) =>
   | End_of_file => List.rev(previousLines)
   };
 
-let trimCitation = str => {
-  let str = Str.global_replace(Str.regexp("'"), "\"", str);
-  if (str == "") {
-    str;
-  } else if (str.[0] == '"') {
-    // If we find a " in the start, assume it's one in the end as well
-    let len = String.length(str);
-
-    String.sub(str, 1, len - 2);
-  } else {
-    str;
-  };
-};
+// Make this test fail
+let trimCitation = _str => "";
 
 let escapeEquals = line =>
   switch (line) {
