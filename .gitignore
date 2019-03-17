@@ -12,3 +12,4 @@ reenv.install
 junit.xml
 _coverage
 coverage.json
+**/dune
